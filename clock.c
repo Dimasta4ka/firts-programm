@@ -21,11 +21,13 @@ int main()
             if(i==4){n = 21; v = sec/10%10;} if(i==6){n = 25; v = sec%10;}
             if(v==0){
                 for(int k=n;k<n+3;k++) display[1][k]=127;
-                display[2][n]=127; display[2][n+2]=127; display[3][n]=127; display[3][n+2]=127; display[4][n]=127; display[4][n+2]=127;
+                display[2][n]=127; display[2][n+2]=127; display[3][n]=127; 
+                display[3][n+2]=127; display[4][n]=127; display[4][n+2]=127;
                 for(int k=n;k<n+3;k++) display[5][k]=127;
             }
             if(v==1){
-                display[1][n+1]=127; display[2][n]=127; display[2][n+1]=127; display[3][n+1]=127; display[4][n+1]=127;
+                display[1][n+1]=127; display[2][n]=127; display[2][n+1]=127; 
+                display[3][n+1]=127; display[4][n+1]=127;
                 for(int k=n;k<n+3;k++) display[5][k]=127;
             }
             if(v==2){
@@ -57,7 +59,8 @@ int main()
             }
             if(v==7){
                 for(int k=n;k<n+3;k++) display[1][k]=127;
-                display[2][n+2]=127; display[3][n+2]=127; display[4][n+1]=127; display[5][n]=127;
+                display[2][n+2]=127; display[3][n+2]=127; 
+                display[4][n+1]=127; display[5][n]=127;
             }
             if(v==8){
                 for(int k=n;k<n+3;k++) display[1][k]=127;
